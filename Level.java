@@ -1,12 +1,23 @@
 public class Level
 {
+    private boolean goalReached;
+    private int points;
     public boolean goalReached()
     {
-        return false;
+        return goalReached;
+    }
+    public void reachGoal()
+    {
+        goalReached = true;
     }
 
-    public int getScore()
+    public int getPoints()
     {
-        return -1;
+        return points;
+    }
+    
+    public void setPoints(int p)
+    {
+        points = p;
     }
 }
